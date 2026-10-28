@@ -1,0 +1,11 @@
+{
+  "name": "infinity-config",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["packages/config-core", "packages/config-react"],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm test --workspaces",
+    "build": "npm run build --workspaces"
+  }
+}

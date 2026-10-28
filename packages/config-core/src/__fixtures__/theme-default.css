@@ -1,0 +1,6 @@
+/* Copy of the Infinity default theme tokens needed by the config-core tests. */
+:root {
+  --card: light-dark(#FDFCFA, #1F2124);
+  --grid: light-dark(rgb(27 28 30 / 0.045), rgb(235 234 230 / 0.04));
+  --grid2: light-dark(rgb(27 28 30 / 0.09), rgb(235 234 230 / 0.08));
+}

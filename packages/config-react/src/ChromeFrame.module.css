@@ -1,0 +1,9 @@
+.frame { box-sizing: border-box; display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
+.card { border-style: solid; }
+.header { display: flex; flex-direction: column; gap: var(--s-1); }
+.title { margin: 0; }
+.description { margin: 0; }
+.body { min-width: 0; }
+.state { display: flex; flex-direction: column; gap: var(--s-2); }
+.broke { display: inline-flex; align-items: center; gap: var(--s-2); color: var(--bad); }
+.broke::before { content: ''; width: var(--s-2); height: var(--s-2); background: var(--bad); clip-path: polygon(20% 0, 50% 30%, 80% 0, 100% 20%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 20% 100%, 0 80%, 30% 50%, 0 20%); }

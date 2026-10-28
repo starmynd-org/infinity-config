@@ -1,0 +1,5 @@
+# @infinity/config-react
+
+React controls for `@infinity/config-core`. Register a component renderer, then use `Visual` to validate a saved document, resolve its token values and draw it inside the shared chrome frame. `SettingsPanel` renders controls from the component schema and sends path-based patch operations to the caller. The package supports React 18 and 19 and does not import the Infinity app or a chart library.
+
+`Visual` accepts optional React `children` and passes them unchanged to the registered renderer. This lets a layout renderer place nested visuals inside its own structure. Pass `headingLevel={3}` for a visual inside a section; the default is 2. `ChromeFrame` and the registered renderer receive the same heading level, so a component with `chrome.header` set to `none` can draw its own heading. The frame keeps its title linked with `aria-labelledby`. Set `chrome.header` to `none` for a layout block to return only its renderer content, without a chrome header or card frame. Error and empty states still render.

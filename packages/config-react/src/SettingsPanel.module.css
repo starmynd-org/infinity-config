@@ -1,0 +1,14 @@
+.panel { display: flex; flex-direction: column; gap: var(--s-3); color: var(--ink); font-family: var(--font); }
+.group { border: 1px solid var(--rule); border-radius: var(--r-control); padding: var(--s-2); }
+.group summary { cursor: pointer; font-weight: 600; }
+.fields { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--s-3); margin-top: var(--s-3); }
+.field { display: flex; flex-direction: column; gap: var(--s-1); grid-column: span 6; }
+.half { grid-column: span 3; }
+.third { grid-column: span 2; }
+.label { display: flex; align-items: center; gap: var(--s-1); }
+.dot { color: var(--run); }
+.control { color: var(--ink); background: var(--card); border: 1px solid var(--field); border-radius: var(--r-control); padding: var(--s-2); font: inherit; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.button { color: var(--ink); background: var(--surface); border: 1px solid var(--field); border-radius: var(--r-control); padding: var(--s-1) var(--s-2); cursor: pointer; }
+.why { color: var(--soft); }
+.why pre { white-space: pre-wrap; overflow-wrap: anywhere; }
